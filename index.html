@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Links 🔗 -->
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yao Timer</title>
+</head>
+<body>
+    
+<div id="Timer">
+        
+        <span class="Time"><span id="Hours">00</span>:<span id="Minutes">00</span>:<span id="Seconds"></span></span><br><br>
+
+
+        <div class="Buttons">
+
+        <button class="AddButton" id="AddHours" onclick="Add_Hours()" title="Add Hours">+</button>
+
+        <button class="AddButton" id="MinusHours" onclick="Minus_Hours()" title="Minus Hours">-</button>
+
+
+        <span class="divider">|</span>
+
+
+        <button class="AddButton" id="AddMinutes" onclick="Add_Minutes()" title="Add Minutes">+</button>
+
+        <button class="AddButton" id="MinusMinutes" onclick="Minus_Minutes()" title="Minus Minutes">-</button>
+
+
+        <span class="divider">|</span>
+
+
+        <button class="AddButton" id="AddSeconds" onclick="Add_Seconds()" title="Add Seconds">+</button>
+
+        <button class="AddButton" id="MinusSeconds" onclick="Minus_Seconds()" title="Minus Seconds">-</button>
+    
+    </div><br><br>
+
+    <audio style="display: none;" id="Alarm">
+      <source src="Audio/alarm-clock-90867.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+<div class="Settings">
+
+    <button id="ClearTimer" class="AddButton" onclick="ClearTimer()" title="Clear Timer">Clear</button> 
+    <button id="StartTimer"><i class="fa-solid fa-play" onclick="Start_Timer()" title="Start_Timer"></i></button>
+
+</div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

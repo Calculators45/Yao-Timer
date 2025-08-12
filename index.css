@@ -1,0 +1,84 @@
+/* Fonts Link 🔗 */
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+*::selection {
+    color: black;
+    background: #ececfc;
+}
+
+
+/* Body Styles */
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebf8;
+}
+
+
+/* Timer Styles ⏲️ */
+
+#Timer {
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#Timer .Time {
+    font-size: 105px;
+    font-weight: bold;
+}
+
+#Timer .AddButton {
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+#Timer .AddButton:hover {
+    color: #fff;
+    background: #333;
+}
+
+#Timer .AddButton.Hidden {
+    display: none;
+    visibility: hidden;
+}
+
+
+#Timer .Divider {
+    color: #333;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#Timer #StartTimer {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+#Timer #StartTimer:hover {
+    background-color: #111;
+}
+
+#Timer .Settings {
+    justify-self: center;
+}
+
+#Timer .Buttons {
+    justify-self: center;
+}
